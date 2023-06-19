@@ -33,6 +33,5 @@ namespace Inheritance_exercises
             Console.WriteLine("Student ID: " + studentID);
             Console.WriteLine("Major: " + major);
         }
-
     }
 }
