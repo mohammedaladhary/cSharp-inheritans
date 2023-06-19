@@ -10,6 +10,9 @@
             Console.WriteLine("------------------------------------------");
 
             Dog dog = new Dog("Sony",5,"Havenese","Brr!!");
+            Dog dog2 = new Dog("Sonyy", 5, "Havenese", "Brr!!");
+
+            Console.WriteLine(dog.Equals(dog2));
             //dog.PrintDetails();
             dog.doSomething();
             dog.makeSound();

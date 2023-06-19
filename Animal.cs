@@ -21,9 +21,19 @@ namespace Inheritance_exercises
         {
             Console.WriteLine("Animal - doSomething");
         }
+        //public abstract void makeSound();
         public virtual void makeSound()
         {
             Console.WriteLine("Sound of Dog");
+        }
+        public override bool Equals(object? obj)
+        {
+            Animal animal = obj as Animal;//opt1
+            if (animal == null)
+            {
+                return false;
+            }
+            return this.Name == ((Animal)obj).Name;//opt2
         }
     }
 
