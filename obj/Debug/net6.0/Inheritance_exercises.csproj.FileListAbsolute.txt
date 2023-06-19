@@ -1,0 +1,5 @@
+C:\Users\DELL\Desktop\code_TRA\Inheritance_exercises\obj\Debug\net6.0\Inheritance_exercises.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\code_TRA\Inheritance_exercises\obj\Debug\net6.0\Inheritance_exercises.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\code_TRA\Inheritance_exercises\obj\Debug\net6.0\Inheritance_exercises.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\code_TRA\Inheritance_exercises\obj\Debug\net6.0\Inheritance_exercises.AssemblyInfo.cs
+C:\Users\DELL\Desktop\code_TRA\Inheritance_exercises\obj\Debug\net6.0\Inheritance_exercises.csproj.CoreCompileInputs.cache
