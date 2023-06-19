@@ -21,7 +21,7 @@ namespace Inheritance_exercises
         public int studentID;
         public string major;
 
-        public Student(int studentID, string major) : base(name, age)
+        public Student(string name, int age, int studentID, string major) : base(name, age)
         {
             this.studentID = studentID;
             this.major = major;
