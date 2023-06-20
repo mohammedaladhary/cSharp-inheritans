@@ -17,7 +17,7 @@ namespace Inheritance_exercises
             this.Name = name;
             this.Age = age;
         }
-        public virtual void doSomething()
+        public virtual void  doSomething()
         {
             Console.WriteLine("Animal - doSomething");
         }
@@ -28,12 +28,16 @@ namespace Inheritance_exercises
         }
         public override bool Equals(object? obj)
         {
-            Animal animal = obj as Animal;//opt1
+            Animal animal = obj as Animal;
             if (animal == null)
             {
                 return false;
             }
-            return this.Name == ((Animal)obj).Name;//opt2
+            return this.Name == ((Animal)obj).Name;
+        }
+        public virtual void printSomething()
+        {
+            Console.WriteLine("aAbBcC");
         }
     }
 
@@ -73,6 +77,10 @@ namespace Inheritance_exercises
         public override void makeSound()
         {
             Console.WriteLine("Sound of cat");
+        }
+        public new void printSomething()
+        {
+            Console.WriteLine("abc");
         }
     }
     sealed class Lion : Animal
