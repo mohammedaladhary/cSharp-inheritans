@@ -44,6 +44,35 @@
             Animal a = new Dog("Sony", 5, "Havenese", "Brr!!");
             a.doSomething();
 
+            // with static, we write static in the function (addInteger)
+            Console.WriteLine(addInteger(2, 3));
+
+            //without static need to do the following:
+            // 1. Create an instance of the program class
+            Program p = new Program();
+
+            // 2. Call the non-static function using the dot operator
+            Console.WriteLine(p.addDouble(2.34, 7.54));
+
+
+        }
+
+        static int addInteger (int a, int b) //overloading - same name with differnet parameters
+        {
+            return a + b; // does not have impact on overloading
+        }
+        static int addInteger(int a, int b, int c) //overloading - same name with differnet parameters
+        {
+            return a + b + c; // does not have impact on overloading
+        }
+        static double addInteger(double a, double b) //overloading - same name with differnet parameters
+        {
+            return a + b; // does not have impact on overloading
+        }
+
+        double addDouble(double a, double b)
+        {
+            return a + b;
         }
 
         //public void letsDoSomething (Dog d)
