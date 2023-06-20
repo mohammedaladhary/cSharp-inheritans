@@ -16,13 +16,14 @@
             //dog.PrintDetails();
             dog.doSomething();
             dog.makeSound();
+            dog.printSomething();
             Console.WriteLine("------------------------------------------");
 
             Cat cat = new Cat("Paul", 12);
             cat.doSomething();
             cat.makeSound();
             Console.WriteLine("------------------------------------------");
-            cat.printSomething();
+            //cat.printSomething();
             //Lion lion = new Lion("Jack", 34);
             //lion.doSomething();
             //lion.makeSound();
@@ -39,7 +40,24 @@
 
             Console.WriteLine("Area of the rectangle = " + rectangle.GetArea());
             Console.WriteLine("Perimeter of the rectangle is = " + rectangle.GetPerimeter());
+
+            Animal a = new Dog("Sony", 5, "Havenese", "Brr!!");
+            a.doSomething();
+
         }
+
+        //public void letsDoSomething (Dog d)
+        //{
+        //    //functionlity
+        //}
+        //public void letsDoSomething(Cat c)
+        //{
+        //    //functionlity
+        //}
+        //public void letsDoSomething(Dog d)
+        //{
+        //    //functionlity
+        //}
     }
 
 }

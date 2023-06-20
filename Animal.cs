@@ -17,15 +17,20 @@ namespace Inheritance_exercises
             this.Name = name;
             this.Age = age;
         }
+        public abstract void makeSound();
         public virtual void  doSomething()
         {
             Console.WriteLine("Animal - doSomething");
         }
-        //public abstract void makeSound();
-        public virtual void makeSound()
+        public virtual void printSomething()
         {
-            Console.WriteLine("Sound of Dog");
+            Console.WriteLine("abc");
         }
+        //public abstract void makeSound();
+        //public override void makeSound()
+        //{
+        //    Console.WriteLine("Sound of Animal");
+        //}
         public override bool Equals(object? obj)
         {
             Animal animal = obj as Animal;
@@ -34,10 +39,6 @@ namespace Inheritance_exercises
                 return false;
             }
             return this.Name == ((Animal)obj).Name;
-        }
-        public virtual void printSomething()
-        {
-            Console.WriteLine("aAbBcC");
         }
     }
 
@@ -66,6 +67,10 @@ namespace Inheritance_exercises
         public override void makeSound()
         {
             Console.WriteLine("Sound of Dog");
+        }
+        new public virtual void printSomething()
+        {
+            Console.WriteLine("aAbBcC");
         }
     }
     internal class Cat : Animal
