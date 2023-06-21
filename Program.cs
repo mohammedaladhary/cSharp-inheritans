@@ -46,6 +46,11 @@
 
             // with static, we write static in the function (addInteger)
             Console.WriteLine(addInteger(2, 3));
+            //you can access more than one use depends
+            //on the number of the function with same name
+            //addInteger(2,3); 
+            //addInteger(2, 3, 4);
+            //addInteger(2.2, 53.5);
 
             //without static need to do the following:
             // 1. Create an instance of the program class
